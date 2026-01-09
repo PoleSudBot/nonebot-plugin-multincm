@@ -1,5 +1,3 @@
-# ruff: noqa: E402
-
 import asyncio
 
 from nonebot import get_driver
@@ -44,8 +42,8 @@ auto_resolve_tip = "▶ Bot 会自动解析你发送的网易云链接\n" if con
 
 __version__ = "1.3.1.post1"
 __plugin_meta__ = PluginMetadata(
-    name="MultiNCM",
-    description="网易云多选点歌",
+    name="网易云点歌",
+    description="MultiNCM，网易云多选点歌",
     usage=(
         "搜索指令：\n"
         f"{search_commands_help}"
