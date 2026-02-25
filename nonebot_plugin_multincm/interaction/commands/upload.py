@@ -13,11 +13,11 @@ async def upload_handler_0(matcher: Matcher, song: ResolvedSong):
         await send_song_media(song, as_file=True)
     except Exception:
         logger.exception(f"Failed to upload {song} as file")
-        await matcher.finish("上传失败，请检查后台输出")
+        await matcher.finish("下载歌曲失败，请检查后台输出")
 
 
 def __register_upload_matcher():
-    matcher_lyric = on_command("上传", aliases={"upload"})
+    matcher_lyric = on_command("下载歌曲", aliases={"download_song"})
     matcher_lyric.handle()(upload_handler_0)
 
 
