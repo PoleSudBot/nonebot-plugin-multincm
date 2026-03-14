@@ -88,7 +88,7 @@ class Song(BaseSong[md.Song]):
 @searcher
 class SongSearcher(BaseSearcher[md.SongSearchResult, md.Song, Song]):
     child_calling = Song.calling
-    commands = ("点歌", "网易云", "wyy", "网易点歌", "wydg", "wysong")
+    commands = ("点歌", "网易点歌", "wydg", "wysong")
 
     @staticmethod
     @override

@@ -17,7 +17,7 @@ async def upload_handler_0(matcher: Matcher, song: ResolvedSong):
 
 
 def __register_upload_matcher():
-    matcher_lyric = on_command("下载歌曲", aliases={"download_song"})
+    matcher_lyric = on_command("下载歌曲", aliases={"下载", "download_song"})
     matcher_lyric.handle()(upload_handler_0)
 
 
